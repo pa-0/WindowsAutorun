@@ -1,12 +1,16 @@
 # WindowsAutorun
+_WindowsAutorun_ manages startup on the Windows OS. The following controls have been implemented in the current version:
+- Register - LOCAL_MACHINE
+- Register - CURRENT_USER
+- Start - Startup Folder
 
-WindowsAutorun - поможет вам управлять автозагрузкой в ОС Виндовс. На данный момент реализовано управление:
- - Реестр - LOCAL_MACHINE
- - Реестр - CURRENT_USER
- - Папка Пуск-Автозагрузка
- - Нужны еще варианты? Создавайте задачу, вместе подумаем, и решим ;)
- 
-## Как использовать?
-В зависимости от типа автозагрузки( для реестра - Autorun.Windows.Register.pas, для папки - Autorun.Windows.StartupDir.pas) подключите необходимый модуль. Далее необходимо инициализировать переменную типа **IAutorunManager** необходимым поддерживаемым классом и работать с этим интерфейсом. 
+## How to use?
 
+1. ### Connect the required module depending on the type of startup: 
 
+  - ### Registry Startup Items 
+    - `Autorun.Windows.Register.pas` 
+  - ### Startup Folder 
+    - `Autorun.Windows.StartupDir.pas` .
+      
+2. ### Next, Initialize a variable of type `IAutorunManager` with the required supported class and work with this interface.
